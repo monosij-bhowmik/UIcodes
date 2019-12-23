@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>LogIn form</title>
+</head>
+<body>
+<script>
+var checkLogin = function () {
+    var login = document.getElementById("mail").value;
+    var pass = document.getElementById("password").value;
+    if (login === "user123" && pass === "1234") {
+        location.replace("file:///C:/Users/admin/Desktop/index.html");
+    }
+};
+</script>
+<h2>Login form</h2>
+<tr>
+<td><input type = "text" id = "mail"></td>
+</tr>
+<br>
+<tr>
+<br><td><input type = "password" id = "password"></td>
+</tr>
+<br><br>
+<input type = "button" value = "LogIn" onclick = "checkLogin()">
+</body>
+</html>
