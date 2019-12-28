@@ -1,0 +1,11 @@
+SQL Queries
+1. select first_name as worker_name from worker ;
+2. select upper(first_name) as worker_name from worker;
+3. select distinct department  from worker;
+4. select substr(first_name, 0,3)  from worker;
+5. select instr(first_name, 'A') from worker where first_name ='Amitabh';
+6. select rtrim(first_name) from worker;
+7. select ltrim(department) from worker;
+8. select length(department) as length from worker group by department ;
+9. select replace(first_name,'N','M') as char_changed from worker;
+10. select concat(first_name,concat(' ',last_name)) as complete_name from worker;
